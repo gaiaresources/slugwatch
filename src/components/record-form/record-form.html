@@ -1,7 +1,7 @@
 <div *ngIf="form && formDescriptor">
     <form [formGroup]="form">
         <ion-item-group *ngIf="formDescriptor.dateFields && formDescriptor.dateFields.length">
-            <ion-item-divider color="secondary">
+            <ion-item-divider color="primary">
                 <fa-icon [icon]="['far', 'calendar']"></fa-icon>&nbsp;
                 Dates
             </ion-item-divider>
@@ -22,10 +22,10 @@
             </ion-item>
         </ion-item-group>
         <ion-item-group *ngIf="formDescriptor.locationFields && formDescriptor.locationFields.length">
-            <ion-item-divider color="secondary">
+            <ion-item-divider color="primary">
                 <fa-icon icon="location-arrow"></fa-icon>&nbsp;
                 Location (Current Accuracy: {{lastLocation && lastLocation.coords ? ((lastLocation.coords.accuracy | number: '1.0-0') || 'Waiting for Reading...') : 'Waiting for Reading...'}})
-                <button *ngIf="!readonly" ion-button color="primary" (click)="updateLocationFields()" class="item-divider-button">
+                <button *ngIf="!readonly" ion-button color="secondary" (click)="updateLocationFields()" class="item-divider-button">
                     {{UPDATE_BUTTON_NAME}}
                 </button>
             </ion-item-divider>
@@ -65,7 +65,7 @@
             </ion-item>
         </ion-item-group>
         <ion-item-group *ngIf="formDescriptor.requiredFields && formDescriptor.requiredFields.length">
-            <ion-item-divider color="secondary">
+            <ion-item-divider color="primary">
                 <fa-icon icon="star"></fa-icon>&nbsp;
                 Required fields
             </ion-item-divider>
@@ -112,14 +112,14 @@
                         [maxlength]="inputMaxLength(field.key)"
                         [placeholder]="field.description || ''"
                         [formControlName]="field.key"
-                        [disabled]="isFieldReadOnly(field.key) || readonly"
+                        [disabled]="isFieldReadOnly() || readonly"
                         [readonly]="readonly"
                     *ngSwitchDefault [type]="field.type">
                 </ion-input>
             </ion-item>
         </ion-item-group>
         <ion-item-group *ngIf="formDescriptor.optionalFields && formDescriptor.optionalFields.length">
-            <ion-item-divider color="secondary">
+            <ion-item-divider color="primary">
                 <fa-icon [icon]="['far', 'star']"></fa-icon>&nbsp;
                 Optional fields
             </ion-item-divider>

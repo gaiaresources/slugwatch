@@ -13,7 +13,7 @@ import { Dataset, User } from '../../biosys-core/interfaces/api.interfaces';
 import { StorageService } from '../../shared/services/storage.service';
 import { AuthService } from '../../biosys-core/services/auth.service';
 import { formatUserFullName } from '../../biosys-core/utils/functions';
-import { UPDATE_BUTTON_NAME, DATASET_NAME_TREESURVEY } from '../../shared/utils/consts';
+import { UPDATE_BUTTON_NAME } from '../../shared/utils/consts';
 
 /**
  * Generated class for the RecordFormComponent component.
@@ -345,10 +345,8 @@ export class RecordFormComponent implements OnDestroy {
         }
     }
 
-    private isFieldReadOnly(fieldName: string) {
-        return this.readonly ||
-               fieldName === 'Census ID' ||
-               (fieldName === 'SiteNo' && this.datasetName === DATASET_NAME_TREESURVEY);
+    private isFieldReadOnly() {
+        return this.readonly;
     }
 
     private inputMaxLength(key: string) {
