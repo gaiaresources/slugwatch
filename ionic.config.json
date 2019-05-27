@@ -1,0 +1,7 @@
+{
+  "name": "i-see-koalas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
