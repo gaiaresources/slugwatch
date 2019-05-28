@@ -17,7 +17,6 @@ import { RecordsListComponent } from '../../components/records-list/records-list
 import { RecordsMapComponent } from '../../components/records-map/records-map';
 import { UploadService } from '../../shared/services/upload.service';
 import {
-    DATASET_NAME_CENSUS,
     DATASET_NAME_OBSERVATION,
     TOAST_DURATION
 } from '../../shared/utils/consts';
@@ -39,7 +38,6 @@ export class HomePage implements OnInit {
     public recordsMap = RecordsMapComponent;
 
     // consts used in template
-    public DATASETNAME_CENSUS = DATASET_NAME_CENSUS;
     public DATASETNAME_OBSERVATION = DATASET_NAME_OBSERVATION;
 
     @ViewChild('homeTabs') tabRef: Tabs;
@@ -135,13 +133,6 @@ export class HomePage implements OnInit {
           fabDelete.remove();
         }
         fabUp = document.getElementById('myFabObo');
-        fabUpIn = fabUp.children.item(0);
-        fabStuff = fabUpIn.children;
-        fabDelete = fabStuff.namedItem('close');
-        if (fabDelete) {
-          fabDelete.remove();
-        }
-        fabUp = document.getElementById('myFabTree');
         fabUpIn = fabUp.children.item(0);
         fabStuff = fabUpIn.children;
         fabDelete = fabStuff.namedItem('close');

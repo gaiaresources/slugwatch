@@ -6,13 +6,11 @@ export let RECORD_COMPLETE = '#ebffef';
 export let RECORD_INCOMPLETE = '#ebf6ff';
 export let RECORD_UPLOADED = '#ebf0df';
 
-export let APP_NAME = 'I Spy Koala';
+export let APP_NAME = 'Slug Sleuth';
 
-export let PROJECT_NAME = 'Koala Pilot Project';
+export let PROJECT_NAME = 'OEH Slugs and Snails';
 
-export let DATASET_NAME_CENSUS = 'Koala Scat Census';
-export let DATASET_NAME_OBSERVATION = 'Koala Opportunistic Observation';
-export let DATASET_NAME_TREESURVEY = 'Trees Surveyed';
+export let DATASET_NAME_OBSERVATION = 'Mount Kaputar Giant Pink Slug';
 
 export let REGO_URL = 'http://www.environment.nsw.gov.au/atlaspublicapp/Registration.aspx';
 
