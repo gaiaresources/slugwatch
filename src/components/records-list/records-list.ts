@@ -3,8 +3,7 @@ import { NavController, NavParams, Events } from 'ionic-angular';
 import { ClientRecord } from '../../shared/interfaces/mobile.interfaces';
 import { ANY_ANGULAR_DATETIME_FORMAT } from '../../biosys-core/utils/consts';
 import {
-  RECORD_INCOMPLETE, RECORD_COMPLETE, RECORD_UPLOADED, DATASET_NAME_OBSERVATION, DATASET_NAME_CENSUS,
-  DATASET_NAME_TREESURVEY, APP_NAME
+  RECORD_INCOMPLETE, RECORD_COMPLETE, RECORD_UPLOADED, DATASET_NAME_OBSERVATION, APP_NAME
 } from '../../shared/utils/consts';
 import { isDatasetCensus } from '../../shared/utils/functions';
 import { StorageService } from '../../shared/services/storage.service';
@@ -20,8 +19,6 @@ export class RecordsListComponent {
     public items: Array<{ title: string, note: string, icon: string }>;
 
     // consts used in template
-    public DATASETNAME_TREESURVEY = DATASET_NAME_TREESURVEY;
-    public DATASETNAME_CENSUS = DATASET_NAME_CENSUS;
     public DATASETNAME_OBSERVATION = DATASET_NAME_OBSERVATION;
 
     public APP_NAME = APP_NAME;
@@ -69,18 +66,7 @@ export class RecordsListComponent {
     }
 
   public getAltText(record: ClientRecord): string {
-    let rv = '';
-    switch (record.datasetName) {
-      case DATASET_NAME_OBSERVATION:
-        rv = 'Observation ';
-        break;
-      case DATASET_NAME_CENSUS:
-        rv = 'Census ';
-        break;
-      case DATASET_NAME_TREESURVEY:
-        rv = 'Tree Survey ';
-        break;
-    }
+    let rv = 'Observation ';
     if (record.id) {
       rv += 'uploaded';
     } else {
@@ -89,27 +75,13 @@ export class RecordsListComponent {
     return rv;
   }
 
-
-  public getDatasetIcon(record: ClientRecord): string {
-        switch (record.datasetName) {
-            case DATASET_NAME_OBSERVATION:
-                return 'assets/imgs/eye.png';
-            case DATASET_NAME_CENSUS:
-                return 'assets/imgs/trees.png';
-            case DATASET_NAME_TREESURVEY:
-                return 'assets/imgs/tree.png';
-        }
+    public getDatasetIcon(record: ClientRecord): string {
+        return 'assets/imgs/eye.png';
     }
 
     public getCountIcon(record: ClientRecord): string {
-        switch (record.datasetName) {
-            case DATASET_NAME_OBSERVATION:
-                return 'assets/imgs/koala.png';
-            case DATASET_NAME_CENSUS:
-                return 'assets/imgs/tree.png';
-            case DATASET_NAME_TREESURVEY:
-                return 'assets/imgs/koala.png';
-        }
+        console.log(record);
+        return 'assets/imgs/slugGrey.png';
     }
 
     private navPush(page, params) {
