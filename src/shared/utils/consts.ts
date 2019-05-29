@@ -8,9 +8,12 @@ export let RECORD_UPLOADED = '#ebf0df';
 
 export let APP_NAME = 'Slug Sleuth';
 
-export let PROJECT_NAME = 'OEH Slugs and Snails';
+// export let PROJECT_NAME = 'OEH Slugs and Snails';
+export let PROJECT_NAME = 'Mount Kaputar snail and slug';
 
-export let DATASET_NAME_OBSERVATION = 'Mount Kaputar Giant Pink Slug';
+// export let DATASET_NAME_OBSERVATION = 'Mount Kaputar Giant Pink Slug';
+// export let DATASET_NAME_OBSERVATION = 'mount-kaputar-giant-pink-slug';
+export let DATASET_NAME_OBSERVATION = 'Slug sleuth';
 
 export let REGO_URL = 'http://www.environment.nsw.gov.au/atlaspublicapp/Registration.aspx';
 

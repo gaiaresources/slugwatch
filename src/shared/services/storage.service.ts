@@ -28,10 +28,13 @@ export class StorageService {
     }
 
     public putDataset(dataset: Dataset): Observable<boolean> {
+      console.log('ds-putN', dataset.name);
+      console.log('ds-put', dataset);
         return fromPromise(this.storage.set(`${StorageService.DATASET_PREFIX}${dataset.name}`, dataset));
     }
 
     public getDataset(key: string): Observable<Dataset> {
+      console.log('ds-getN', key);
         return fromPromise(this.storage.get(`${StorageService.DATASET_PREFIX}${key}`));
     }
 

@@ -54,8 +54,10 @@ export class ObservationPage {
       this.recordClientId = UUID.UUID();
     }
     this.photoGallery.RecordId = this.recordClientId;
+    console.log('obo-dataget', this.navParams.get('datasetName'));
 
     this.storageService.getDataset(this.navParams.get('datasetName')).subscribe((dataset: Dataset) => {
+      console.log('obo-dataset', dataset);
       if (dataset) {
         this.dataset = dataset;
 
