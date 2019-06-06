@@ -27,7 +27,7 @@ import { isDatasetCensus } from '../../shared/utils/functions';
     selector: 'page-home',
     templateUrl: 'home.html'
 })
-export class HomePage implements OnInit {
+export class HomePage {
     public showList = true;
 
     public records: ClientRecord[];
@@ -119,26 +119,4 @@ export class HomePage implements OnInit {
         });
 
     }
-
-  ngOnInit(): void {
-      // setTimeout( () => {
-      //   // These are needed to fix the app when used with a screenreader. Otherwise,
-      //   // ionic adds a close-icon, which manifests itself as the screenreader saying
-      //   // Close <title of button> button.
-      //   let fabUp = document.getElementById('myFabUpload');
-      //   let fabUpIn = fabUp.children.item(0);
-      //   let fabStuff = fabUpIn.children;
-      //   let fabDelete = fabStuff.namedItem('close');
-      //   if (fabDelete) {
-      //     fabDelete.remove();
-      //   }
-      //   fabUp = document.getElementById('myFabObo');
-      //   fabUpIn = fabUp.children.item(0);
-      //   fabStuff = fabUpIn.children;
-      //   fabDelete = fabStuff.namedItem('close');
-      //   if (fabDelete) {
-      //     fabDelete.remove();
-      //   }
-      // }, 500);
-  }
 }
