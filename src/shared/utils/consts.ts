@@ -110,7 +110,9 @@ cloud-based server.</p>
 <p>Once we have received information you transmit to us, we take reasonable steps to protect information during transfer and storage. Physical measures, such as building and equipment security, are used in conjunction with digital technology, such as data encryption and firewalls, to minimise unauthorised access to information.</p>
 
 <h2>Privacy enquiries</h2>
-<p>General privacy enquiries or enquiries concerning access to, or amendment of, your personal information that is held by NPWS, can be made by contacting the NPWS Information and Privacy Team on 02 9995 5266, at pia@environment.nsw.gov.au or in writing to:</p>
+<p>General privacy enquiries or enquiries concerning access to, or amendment of, your 
+personal information that is held by NPWS, can be made by contacting the NPWS Information and 
+Privacy Team on 02 9995 5266, at <a href="mailto:pia@environment.nsw.gov.au">pia@environment.nsw.gov.au</a> or in writing to:</p>
 
 <p>
 Manager, Privacy and Information Access<br/>
@@ -119,5 +121,5 @@ PO Box A290, Sydney South NSW 1232<br/>
 </p>
 
 <p>Privacy information can also be found on our website at: 
-https://www.environment.nsw.gov.au/help/privacy.htm</p>
+<a href="https://www.environment.nsw.gov.au/help/privacy.htm">https://www.environment.nsw.gov.au/help/privacy.htm</a></p>
 `;
