@@ -110,14 +110,7 @@ export class RecordsListComponent {
         const params = {
             datasetName: datasetName,
         };
-        if (isDatasetCensus(datasetName)) {
-            page = 'CensusPage';
-        } else {
-            if (this.parentId) {
-                params['parentId'] = this.parentId;
-            }
-            page = 'ObservationPage';
-        }
+        page = 'ObservationPage';
         this.navPush(page, params);
     }
 

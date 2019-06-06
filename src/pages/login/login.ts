@@ -17,8 +17,7 @@ import { SignUpPage } from '../sign-up/sign-up';
 import {
   REGO_URL,
   PROJECT_NAME,
-  SIGNUP_TERMS_AND_CONDITIONS_HTML,
-  SIGNUP_TERMS_AND_CONDITIONS_HTML_OLD
+  SIGNUP_TERMS_AND_CONDITIONS_HTML, APP_NAME
 } from '../../shared/utils/consts';
 
 /**
@@ -56,7 +55,7 @@ export class LoginPage {
     public signup() {
       this.dialog = this.alertController.create({
         title: 'Terms and Conditions',
-        subTitle: 'To sign up to I See Koala you\'ll need to agree to the following terms and conditions:',
+        subTitle: 'To sign up to ' + APP_NAME + ' you\'ll need to agree to the following terms and conditions:',
         message: SIGNUP_TERMS_AND_CONDITIONS_HTML,
         mode: 'md',
         buttons: [

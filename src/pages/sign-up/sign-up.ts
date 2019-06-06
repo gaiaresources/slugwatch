@@ -125,26 +125,26 @@ export class SignUpPage implements OnInit {
       this.passwordsOK = false;
       return;
     }
-    if (thePasswd.length > 16) {
-      this.passwordsAdvice = 'Password is too long';
-      this.passwordsOK = false;
-      return;
-    }
-    if (!/[a-z]/.test(thePasswd)) {
-      this.passwordsAdvice = 'Password must contain a lower case letter';
-      this.passwordsOK = false;
-      return;
-    }
-    if (!/[A-Z]/.test(thePasswd)) {
-      this.passwordsAdvice = 'Password must contain an upper case letter';
-      this.passwordsOK = false;
-      return;
-    }
-    if (!/[0-9]/.test(thePasswd)) {
-      this.passwordsAdvice = 'Password must contain a digit';
-      this.passwordsOK = false;
-      return;
-    }
+    // if (thePasswd.length > 16) {
+    //   this.passwordsAdvice = 'Password is too long';
+    //   this.passwordsOK = false;
+    //   return;
+    // }
+    // if (!/[a-z]/.test(thePasswd)) {
+    //   this.passwordsAdvice = 'Password must contain a lower case letter';
+    //   this.passwordsOK = false;
+    //   return;
+    // }
+    // if (!/[A-Z]/.test(thePasswd)) {
+    //   this.passwordsAdvice = 'Password must contain an upper case letter';
+    //   this.passwordsOK = false;
+    //   return;
+    // }
+    // if (!/[0-9]/.test(thePasswd)) {
+    //   this.passwordsAdvice = 'Password must contain a digit';
+    //   this.passwordsOK = false;
+    //   return;
+    // }
     this.passwordsAdvice = '';
     this.passwordsOK = true;
   }

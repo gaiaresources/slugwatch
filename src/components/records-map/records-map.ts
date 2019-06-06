@@ -41,8 +41,12 @@ export class RecordsMapComponent implements OnInit {
                 'rotate': false,
             },
             'camera': {
-                'target': new LatLng(-25, 132),
-                'zoom': 3.5,
+                'target': [
+                  new LatLng(-30.03665, 149.98243),
+                  new LatLng(-30.0461, 150.42986),
+                  new LatLng(-30.53412, 150.41718),
+                  new LatLng(-30.52449, 149.96754)
+                ],
             }
         });
         this.map.setMyLocationEnabled(true);
