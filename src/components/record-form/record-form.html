@@ -25,7 +25,7 @@
             <ion-item-divider color="primary">
                 <fa-icon icon="location-arrow"></fa-icon>&nbsp;
                 Location (Current Accuracy: {{lastLocation && lastLocation.coords ? ((lastLocation.coords.accuracy | number: '1.0-0') || 'Waiting for Reading...') : 'Waiting for Reading...'}})
-                <button *ngIf="!readonly" ion-button color="secondary" (click)="updateLocationFields()" class="item-divider-button">
+                <button *ngIf="!readonly" ion-button style="background-color: #839788" (click)="updateLocationFields()" class="item-divider-button">
                     {{UPDATE_BUTTON_NAME}}
                 </button>
             </ion-item-divider>

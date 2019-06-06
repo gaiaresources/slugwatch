@@ -163,6 +163,7 @@ export class RecordFormComponent implements OnDestroy {
             if (!initialUpdate) {
                 this.alertCtrl.create({
                     title: 'Location unavailable',
+                    subTitle: 'Please turn location services on.',
                     buttons: ['OK']
                 }).present();
             }
