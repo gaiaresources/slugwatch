@@ -73,7 +73,7 @@ export class HomePage {
                 this.loading.dismiss();
 
                 this.toastCtrl.create({
-                    message: `Some records failed to upload: ${error.msg}`,
+                    message: `Some records failed to upload - check that you have internet connection and try again.\nError: ${error.msg}`,
                     duration: TOAST_DURATION,
                     cssClass: 'toast-message'
                 }).present();
