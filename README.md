@@ -1,6 +1,6 @@
-# Koala Watch
+# Slug Sleuth
 
-Koala survey collection mobile-app based on Ionic Framework / Angular.
+Slug survey collection mobile-app based on Ionic Framework / Angular.
 
 ### Installation
 
@@ -13,7 +13,7 @@ npm install -g ionic cordova
 This project contains submodules. To clone both the project and submodules, use:
 
 ```bash
-git clone --recurse-submodules https://github.com/gaiaresources/koala-watch
+git clone --recurse-submodules https://github.com/gaiaresources/slugwatch
 ```
 
 Then install node dependencies:
@@ -23,6 +23,8 @@ npm install
 ```
 
 ### Running
+
+Known to work with node 8.x. Untested for later versions.
 
 To run the app in a browser, within the project directory use:
 
@@ -43,7 +45,7 @@ ionic cordova build ios
 The XCode project should be located at
 
 ```bash
-platforms/ios/Koala Watch.xcodeproj
+platforms/ios/Slug Sleuth.xcodeproj
 ```
 
 Fix the XCode project app icons and splash images using the bash script makeIcons.sh
@@ -69,14 +71,14 @@ ionic cordova run ios --device
 Log into the Apple Developer Portal and create a Distribution provisioning profile
 
 * https://developer.apple.com/account/#/overview/
-* Select application id Koala Watch
-* au.com.gaiaresources.koalawatch
+* Select application id Slug Sleuth
+* au.com.gaiaresources.mksas
 * Type is iOS Distribution
 * Seletc App Store
 * Select certificate Gaia Resources (iOS Distribution)
-* Name it Koala Watch Dist
+* Name it Slug Sleuth Dist
 
-Open XCode, in preferences update the profiles, untick Automatic manage siging and select the Koala Watch Dist provisioning profile
+Open XCode, in preferences update the profiles, untick Automatic manage siging and select the Slug Sleuth Dist provisioning profile
 
-Create an Archive and select to Koala Watch Dist provisioning profile
+Create an Archive and select to Slug Sleuth Dist provisioning profile
 
