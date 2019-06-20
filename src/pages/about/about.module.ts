@@ -6,6 +6,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import { AppVersion } from '@ionic-native/app-version';
+
 @NgModule({
   declarations: [
     AboutPage,
@@ -14,6 +16,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
     IonicPageModule.forChild(AboutPage),
     FontAwesomeModule
   ],
+  providers: [AppVersion]
 })
 export class AboutPageModule {
   constructor() {
