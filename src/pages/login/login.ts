@@ -149,9 +149,14 @@ export class LoginPage {
                 },
                 (resetErr) => {
                   waitingForReset.dismiss();
+
+                  const subTitle = (resetErr.status === 400)  // email doesn't exist
+                    ? 'There was a problem resetting your password, please check you entered the email address you registered for this app.'
+                    : 'There was a problem connecting to the server, please check your internet connection and try again.';
+
                   const done = this.alertController.create( {
                     title: 'Password Reset Problem',
-                    subTitle: 'There was a problem resetting your password. Please try again later.',
+                    subTitle: subTitle,
                     buttons: [ {
                       text: 'OK',
                       role: 'ok',
