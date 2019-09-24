@@ -17,8 +17,8 @@ import { RecordsListComponent } from '../../components/records-list/records-list
 import { RecordsMapComponent } from '../../components/records-map/records-map';
 import { UploadService } from '../../shared/services/upload.service';
 import {
-    DATASET_NAME_OBSERVATION,
-    TOAST_DURATION
+  DATASET_NAME_OBSERVATION,
+  TOAST_DURATION, UPLOAD_DONE
 } from '../../shared/utils/consts';
 import { isDatasetCensus } from '../../shared/utils/functions';
 
@@ -84,7 +84,7 @@ export class HomePage {
             complete: () => {
                 this.loading.dismiss();
                 this.toastCtrl.create({
-                    message: 'Records uploaded successfully',
+                    message: UPLOAD_DONE,
                     duration: TOAST_DURATION,
                     cssClass: 'toast-message'
                 }).present();
