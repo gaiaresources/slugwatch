@@ -19,6 +19,9 @@ export let TOAST_DURATION = 3000;
 
 export let UPDATE_BUTTON_NAME = 'Use Current Location';
 
+// export let UPLOAD_DONE = 'Records uploaded successfully';
+export let UPLOAD_DONE = '\'Complete\' records were uploaded successfully. \'Incomplete\' records must be completed before uploading.';
+
 export let SIGNUP_TERMS_AND_CONDITIONS_HTML = `
 <h1>Privacy Policy</h1>
 <p><i>Last modified on 31 May 2019</i></p>
