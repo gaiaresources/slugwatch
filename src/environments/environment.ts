@@ -6,7 +6,7 @@
 
 export const environment = {
     production: false,
-    server: 'https://uat-mksas-api.gaiaresources.com.au',
+    server: 'https://mksas-api.gaiaresources.com.au',
     apiExtension: '/api/',
     logoutUrl: '/#/login/',
     cookieAuthToken: 'auth_token'
