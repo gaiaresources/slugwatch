@@ -25,9 +25,8 @@
 
         <h1>{{APP_NAME}} Help</h1>
         <p>
-            To get started, go to the ‘Records’ screen and choose the button below 
-            to record an observation. An observation is a one-off recording of a 
-            Giant Pink Slug sighting at a particular location.
+            To get started, go to the ‘Records’ screen and choose the button below to record an observation.
+            An observation is a one-off recording of a giant pink slug sighting at a particular location.
         <p>
 
         <button class="fab-button" (click)="onClickedNewRecord(DATASETNAME_OBSERVATION)">
@@ -36,39 +35,39 @@
         </button>
 
         <p>
-            For each observation, please detail the type of observation – either:
+            For each observation, please detail the type of observation, whether it is an observation of
+            one or more animals or sign of the animal’s presence from the distinctive trail marks left on smooth barked eucalypts.
         </p>
 
         <p>
-            an observation of one or more animals
-            <img src="assets/imgs/helpSlug.jpg" alt="A Giant Pink Slug" style="max-width: 100%">
-        </p>
-        
-        <p>
-            or an observation of signs of the animal's presence from the distinctive trail marks left on smooth barked eucalypts. 
-            <img src="assets/imgs/helpTrail.jpg" alt="A Giant Pink Slug's Trail" style="max-width: 100%">
+            <img src="assets/imgs/helpSlug.jpg" alt="A Giant Pink Slug" style="max-width: 100%"><figcaption>Image of giant pink slug – Record an observation</figcaption>
         </p>
 
         <p>
-            For observations where you have multiple slugs on different substrates, please record a separate 
-            observation for each substrate type (tree trunk, road, leaf litter, rock, etc.). This will help 
-            us better understand the way the slugs use their environment.
+            <img src="assets/imgs/helpTrail.jpg" alt="A Giant Pink Slug's Trail" style="max-width: 100%"><figcaption>Image of slug trail on tree trunk – Record a sign/trail</figcaption>
         </p>
-        
+
         <p>
-            Once you have recorded your data, a list of the records will be displayed here. You can also 
-            switch to see the records displayed on a map view using the tab buttons above. Click on a record 
-            in the list to continue editing that record.
+            For observations where you have multiple slugs on different substrates, please record a separate
+            observation for each substrate type (tree trunk, road, leaf litter, rock, etc.).
+            This will help us better understand the way the slugs use their environment
+        </p>
+
+        <p>
+            Once you have recorded your data, a list of the records will be displayed here.
+            You can also switch to see the records displayed on a map view using the tab buttons above.
+            Click on a record in the list to continue editing that record.
+
         </p>
 
         <h2>
             Uploading Records
         </h2>
         <p>
-            When one or more records have been completed, you can upload them to the server by clicking the 
-            upload button. Completed records (shown in green) are those where all required fields are entered 
-            and within the allowable constraints. You can still upload completed records even if some are 
-            incomplete (shown in blue). Incomplete records will not be uploaded.
+            When one or more records have been completed, you can upload them to the server by clicking the upload button.
+            Completed records (shown in green and identified with a C) are those where all required fields are entered
+            and within the allowable constraints. You can still upload completed records even if some are incomplete
+            (shown in blue and identified with an I). Incomplete records will not be uploaded.
         </p>
         <button class="fab-button" (click)="uploadClicked()">
             <img class="fab-button__img" src="assets/imgs/fab-upload.png">
@@ -77,10 +76,9 @@
 
         <h2>GPS accuracy</h2>
         <p>
-            The accuracy of the GPS in your device will improve over time after it
-            has been started as it picks up signals from more satellites. You may wish to
-            update the location information in your observation or census periodically if the current accuracy is
-            insufficient. This can be done by pressing the "{{UPDATE_BUTTON_NAME}}" button within a record form.
+            The accuracy of the GPS in your device will improve over time after it has been started as it picks up
+            signals from more satellites. If you wish to update the location information in your observation press
+            the ‘Use Current Location’ button within a record form.
         </p>
     </div>
 </ion-content>
