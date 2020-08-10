@@ -37,7 +37,7 @@
         "@types/geojson": "^7946.0.3",
         "angular2-uuid": "latest",
         "biosys-core": "./src/biosys-core",
-        "cordova": "^8.0.0",
+        "cordova": "^8.1.2",
         "cordova-android": "7.1.4",
         "cordova-browser": "5.0.3",
         "cordova-ios": "5.0.1",
