@@ -59,6 +59,11 @@
         <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
             <string>Camera required for storing photos of Slugs</string>
         </edit-config>
+        <preference name="WKWebViewOnly" value="true" />
+        <feature name="CDVWKWebViewEngine">
+            <param name="ios-package" value="CDVWKWebViewEngine" />
+        </feature>
+        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
         <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />
         <icon height="40" src="resources/ios/icon/icon-40.png" width="40" />
@@ -111,5 +116,5 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-app-version" spec="0.1.9" />
     <engine name="android" spec="7.1.4" />
-    <engine name="ios" spec="5.0.1" />
+    <engine name="ios" spec="5.1.1" />
 </widget>
