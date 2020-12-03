@@ -3,8 +3,8 @@ export let ANY_IONIC_DATETIME_FORMAT = 'DD/MM/YYYY HH:mm:ss';
 export let ISO_IONIC_DATETIME_FORMAT = 'YYYY-MM-DDTZHH:mm:ssZ';
 
 export let RECORD_COMPLETE = '#dae3aa';
-export let RECORD_INCOMPLETE = '#d1e7e4';
-export let RECORD_UPLOADED = '#f7e39c';
+export let RECORD_INCOMPLETE = '#f7e39c';
+export let RECORD_UPLOADED = '#d1e7e4';
 
 export let APP_NAME = 'Slug Sleuth';
 export let PROJECT_NAME = 'Mount Kaputar snail and slug';
