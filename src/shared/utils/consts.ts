@@ -2,9 +2,9 @@ export let ANY_IONIC_DATETIME_FORMAT = 'DD/MM/YYYY HH:mm:ss';
 
 export let ISO_IONIC_DATETIME_FORMAT = 'YYYY-MM-DDTZHH:mm:ssZ';
 
-export let RECORD_COMPLETE = '#ebffef';
-export let RECORD_INCOMPLETE = '#ebf6ff';
-export let RECORD_UPLOADED = '#ebf0df';
+export let RECORD_COMPLETE = '#dae3aa';
+export let RECORD_INCOMPLETE = '#f7e39c';
+export let RECORD_UPLOADED = '#d1e7e4';
 
 export let APP_NAME = 'Slug Sleuth';
 export let PROJECT_NAME = 'Mount Kaputar snail and slug';
@@ -25,27 +25,27 @@ export let UPLOAD_DONE = '\'Complete\' records were uploaded successfully. \'Inc
 export let SIGNUP_TERMS_AND_CONDITIONS_HTML = `
 <h1>Privacy Policy</h1>
 <p><i>Last modified on 31 May 2019</i></p>
-<p>The purpose of this policy is to tell you what kind of personal information that the 
-NSW National Parks and Wildlife (NPWS) may collect from you when you use the Biosys, 
-BioNet-Atlas, BioNet Vegetation Classification, BioNet APIs and ${APP_NAME} applications 
-(collectively the “App”), how we may use that information, whether we disclose it to anyone 
+<p>The purpose of this policy is to tell you what kind of personal information that the
+NSW National Parks and Wildlife (NPWS) may collect from you when you use the Biosys,
+BioNet-Atlas, BioNet Vegetation Classification, BioNet APIs and ${APP_NAME} applications
+(collectively the “App”), how we may use that information, whether we disclose it to anyone
 and how you can access this information. </p>
 
-<p>This privacy policy only concerns personal information collected by NPWS. The ${APP_NAME} 
-application is distributed through Google Play and the App Store. By using this application 
-you may also provide personal information directly to Google or Apple. Depending on your 
-preferred smart phone system, we recommend that you examine the Privacy Policy of your Android 
+<p>This privacy policy only concerns personal information collected by NPWS. The ${APP_NAME}
+application is distributed through Google Play and the App Store. By using this application
+you may also provide personal information directly to Google or Apple. Depending on your
+preferred smart phone system, we recommend that you examine the Privacy Policy of your Android
 or Apple device and Terms of Service of Google Play and the App Store.</p>
 
 <h2>Your right to privacy</h2>
-<p>In dealing with your personal information NPWS must comply with the Privacy and Personal 
-Information Protection Act 1998 (NSW) which regulates the collection, storage, quality, use 
+<p>In dealing with your personal information NPWS must comply with the Privacy and Personal
+Information Protection Act 1998 (NSW) which regulates the collection, storage, quality, use
 and disclosure of personal information.</p>
 
 <h2>What is your personal information?</h2>
-<p>Personal information is information or an opinion about you. You do not need to be named 
-in the information. It is only necessary that information about you is apparent or can 
-reasonably be ascertained from the information. Personal information is found not just in paper 
+<p>Personal information is information or an opinion about you. You do not need to be named
+in the information. It is only necessary that information about you is apparent or can
+reasonably be ascertained from the information. Personal information is found not just in paper
 files but also in such things as electronic records, video recordings and photographs.</p>
 
 <p>NPWS does not disclose such information to any third party other than as specified below.</p>
@@ -91,10 +91,10 @@ We use your personal information to deliver our services to you so that you can 
 <p>When you post an observation, this information is published on the App. </p>
 <p>The information that will be published is your user name, your unique Bionet observer identification number, and information about the physical site where an observation was made, including place name, time, time zone, date and coordinates.  As noted above, your user name may include your personal information if you can be identified from this information.  However, your observer identity does not have to be your name and we publish the observer identity to project the integrity of the observation process. </p>
 
-<p>In addition to being published, this information will be disclosed to other parties. 
-As these projects are part of broader national studies and conservation works we share your 
-observations in a machine-readable format for certain observations with the Atlas of Living 
-Australia, the Australian Ecological Knowledge Observation System (AEKOS), the Sharing and 
+<p>In addition to being published, this information will be disclosed to other parties.
+As these projects are part of broader national studies and conservation works we share your
+observations in a machine-readable format for certain observations with the Atlas of Living
+Australia, the Australian Ecological Knowledge Observation System (AEKOS), the Sharing and
 Enabling Environmental Data (SEED), and the Global Biodiversity Information Facility (GBIF).</p>
 
 <h2>What about links to other websites?</h2>
@@ -103,8 +103,8 @@ Enabling Environmental Data (SEED), and the Global Biodiversity Information Faci
 <p>We recommend that you examine the Privacy Policy for all third-party websites you visit to understand their procedures for collecting, using and disclosing personal information.</p>
 
 <h2>Access, storage and accuracy of personal information</h2>
-<p>Your personal information is being collected by NPWS, 
-Level 14, 59-61 Goulburn Street, Sydney NSW 2000. It will be held by NPWS in an encrypted 
+<p>Your personal information is being collected by NPWS,
+Level 14, 59-61 Goulburn Street, Sydney NSW 2000. It will be held by NPWS in an encrypted
 cloud-based server.</p>
 <p><b>Access</b> - under the Privacy and Personal Information Protection Act 1998 you have the right to access personal information NPWS holds about you.</p>
 <p><b>Accuracy</b> - we are committed to ensuring that the information we hold is accurate, complete and up to date, so we encourage you to advise us if the information you have given us has changed. If you believe our information is inaccurate, please contact us.</p>
@@ -113,8 +113,8 @@ cloud-based server.</p>
 <p>Once we have received information you transmit to us, we take reasonable steps to protect information during transfer and storage. Physical measures, such as building and equipment security, are used in conjunction with digital technology, such as data encryption and firewalls, to minimise unauthorised access to information.</p>
 
 <h2>Privacy enquiries</h2>
-<p>General privacy enquiries or enquiries concerning access to, or amendment of, your 
-personal information that is held by NPWS, can be made by contacting the NPWS Information and 
+<p>General privacy enquiries or enquiries concerning access to, or amendment of, your
+personal information that is held by NPWS, can be made by contacting the NPWS Information and
 Privacy Team on 02 9995 5266, at <a href="mailto:pia@environment.nsw.gov.au">pia@environment.nsw.gov.au</a> or in writing to:</p>
 
 <p>
@@ -123,6 +123,6 @@ Privacy and Information Access Unit<br/>
 PO Box A290, Sydney South NSW 1232<br/>
 </p>
 
-<p>Privacy information can also be found on our website at: 
+<p>Privacy information can also be found on our website at:
 <a href="https://www.environment.nsw.gov.au/help/privacy.htm">https://www.environment.nsw.gov.au/help/privacy.htm</a></p>
 `;

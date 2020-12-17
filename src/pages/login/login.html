@@ -1,11 +1,11 @@
 <ion-content padding class="vertical-align-content">
+  <form [formGroup]="form">
     <ion-grid>
         <ion-row>
             <ion-col>
                 <h2 style="text-align: center;">Log In</h2>
             </ion-col>
         </ion-row>
-        <form [formGroup]="form">
             <ion-row>
                 <ion-col col-12 col-lg-6 col-md-6 offset-lg-3 offset-md-3>
                     <ion-item no-padding>
@@ -19,6 +19,10 @@
                 </ion-col>
             </ion-row>
             <ion-row>
+                <ion-col>
+                    <br>
+                    <div style="text-align: center;">Enter username and password to login.</div>
+                </ion-col>
                 <ion-col col-7 col-lg-4 col-md-4 offset-md-4 offset-lg-4 offset-3>
                     <button ion-button type="submit" [disabled]="!form.valid" full
                             (click)="login()">Log in</button>
@@ -26,19 +30,28 @@
             </ion-row>
             <ion-row>
                 <ion-col col-7 col-lg-4 col-md-4 offset-md-4 offset-lg-4 offset-3>
-                    <button ion-button type="submit" full (click)="signup()">Sign Up</button>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col col-7 col-lg-4 col-md-4 offset-md-4 offset-lg-4 offset-3>
                     <button ion-button type="submit" full (click)="resetPassword()">Forgotten Password?</button>
                 </ion-col>
             </ion-row>
-        </form>
+    </ion-grid>
+    <ion-grid>
+    <ion-row>
+                <ion-col class="col">
+                  <br/>
+                    <div style="text-align: center;">Create an account by using the Sign up button.</div>
+                  <br/>
+                </ion-col>
+            </ion-row>
+          <ion-row>
+          <ion-col class="col" col-7 col-lg-4 col-md-4 offset-md-4 offset-lg-4 offset-3>
+            <button ion-button type="submit" full (click)="signup()">Sign Up</button>
+                </ion-col>
+            </ion-row>
         <ion-row>
             <ion-col col-12 col-lg-6 col-md-6 offset-lg-3 offset-md-3>
                 <img width="100%" src="assets/imgs/trim.png"/>
             </ion-col>
         </ion-row>
     </ion-grid>
+  </form>
 </ion-content>
