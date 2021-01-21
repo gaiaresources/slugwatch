@@ -30,7 +30,23 @@ To run the app in a browser, within the project directory use:
 
 ```bash
 ionic serve
+
+#android
+ionic cordova run android
 ```
+
+On Android, it may create a corrupted /platforms/android/app/src/main/AndroidManifest.xml
+
+To fix it, remove `<uses-feature android:name="android.hardware.location.gps" />` in AndroidManifest.xml AND
+remove 
+```
+{
+  "xml": "<uses-feature android:name=\"android.hardware.location.gps\" />",
+  "count": 1
+}
+```
+
+from /platforms/android/android.json
 
 ### Apple App Store
 
