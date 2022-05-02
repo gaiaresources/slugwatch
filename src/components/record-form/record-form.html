@@ -112,7 +112,7 @@
                         [maxlength]="inputMaxLength(field.key)"
                         [placeholder]="field.description || ''"
                         [formControlName]="field.key"
-                        [disabled]="isFieldReadOnly() || readonly"
+                        [disabled]="isFieldReadOnly(field.key) || readonly"
                         [readonly]="readonly"
                     *ngSwitchDefault [type]="field.type">
                 </ion-input>
