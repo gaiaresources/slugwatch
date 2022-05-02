@@ -142,7 +142,7 @@ export class RecordFormComponent implements OnDestroy {
                             };
                         });
                     },
-                    complete: () => fieldDescriptor.type = 'select'
+                    complete: () => fieldDescriptor.type = 'string'
                 });
             }
 
@@ -323,8 +323,9 @@ export class RecordFormComponent implements OnDestroy {
         }
 
         if (observerFieldName) {
-            this.authService.getCurrentUser().subscribe((currentUser: User) => this.form.controls[observerFieldName]
-                .setValue(formatUserFullName(currentUser))
+            this.authService.getCurrentUser().subscribe((currentUser: User) => {
+                this.form.controls[observerFieldName].setValue(formatUserFullName(currentUser))
+            }
             );
         }
     }
@@ -346,8 +347,14 @@ export class RecordFormComponent implements OnDestroy {
         }
     }
 
-    private isFieldReadOnly() {
-        return this.readonly;
+    private isFieldReadOnly(fieldName: string) {
+        console.log(fieldName, "asfas")
+
+        if(fieldName === 'Census ID' || fieldName === 'Observer Name' || fieldName === 'Census Observers'){
+            return true;
+        } else {
+            return this.readonly;
+        }
     }
 
     private inputMaxLength(key: string) {
