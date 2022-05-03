@@ -98,3 +98,11 @@ Open XCode, in preferences update the profiles, untick Automatic manage siging a
 
 Create an Archive and select to Slug Sleuth Dist provisioning profile
 
+
+### Android REMEMBERs
+* `nvm install 10`
+* `nvm use`
+* ionic cordova plugin remove cordova-plugin-file
+* ionic cordova plugin add cordova-plugin-file
+* Manually edit `platforms/android/build.gradle` to suit SDK requirements
+* Manually edit `platforms/android/app/src/main/AndroidManifest.xml` to remove duplicate location `<uses>`
